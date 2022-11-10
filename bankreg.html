@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+        </script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bankrega">
+
+
+    <!--Navigation  -->
+
+    <nav class="navbar navbar-expand-lg py-3 sticky-top navbar-light bg-white">
+        <div class="container-fluid">
+            <img class="logo me-3" src="bank.jpg" alt="" width="100px" height="50px">
+            <a class="navbar-brand" href="#">ES10 BANK</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="landing.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="landing.html#section-a">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="landing.html#section-b">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="landing.html#section-c">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="index.html">LogIn</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="reg mt-4">
+        <h1 class=" regfh text-primary text-center"><strong>Registration</strong></h1>
+        <br>
+        <form action="">
+
+            <!-- Account info -->
+            <div class="AcntInfo">
+                <h3>Account Information</h3>
+                <p>The information given in this section is considered as the information of the type of account</p>
+                <br>
+                <div class="regfd">
+                    <div class="Acntype">
+                        <h4>Account Type</h4>
+                        <div class="sel">
+                            <select name="sele" id="sele">
+                                <option></option>
+                                <option value="Cheking Account">Cheking Account</option>
+                                <option value="Savings Account">Savings Account</option>
+                                <option value="A Money Market Account">A Money Market Account</option>
+                                <option value="NRI Account">NRI Account</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="crtype">
+                        <h4>Currency type</h4>
+                        <div class="currency">
+                            <select name="crncy" id="crncy">
+                                <option></option>
+                                <option value="INR">INR</option>
+                                <option value="USD">USD</option>
+                                <option value="EURO">EURO</option>
+                                <option value="CAD">CAD</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+            <!-- Personal Information -->
+
+            <div class="prsnlInfo mt-5">
+                <h3>Personal Information</h3>
+                <p>The information given in this section is considered as the information of the primary account owner
+                    information</p>
+                <br>
+                <h4 class="reg-head-a mb-4">Name</h4>
+                <div class="reganame">
+                    <div class="row_content">
+                        <input type="text" name="fname" id="fname">
+                        <p class="text-center">First Name</p>
+                    </div>
+
+                    <div class="row_content">
+                        <input type="text" name="mname" id="mname">
+                        <p class="text-center">Middle Name</p>
+                    </div>
+
+                    <div class="row_content">
+                        <input type="text" name="lname" id="lname">
+                        <p class="text-center">Last name</p>
+                    </div>
+                </div>
+                <br>
+
+                <div class="phndob">
+                    <div class="regamob">
+                        <h4 class="reg-head-a mt-3 mb-4">Phone Number</h4>
+                        <div class="rega-phn">
+                            <div class="reg-row_cont">
+                                <input type="number" name="numb">
+                                <p class="text-center">Area Code</p>
+                            </div>
+
+                            <div class="row_content">
+                                <input type="number" name="numb">
+                                <p class="text-center">Phone Number</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+
+                    <div class="rega-dob mt-3 mb-4">
+                        <h4 class="mb-4">Date Of Birth</h4>
+                        <div class="calender">
+                            <input type="date" id="dates">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- Residential Information -->
+
+            <div class="readrss">
+                <h4 class="reg-head-ab mt-4 mb-4">Residential Address</h4>
+
+                <div class="regresa">
+                    <div class="rescnt">
+                        <input type="text" name="stradrss">
+                        <p class="text-center">Street Address</p>
+                    </div>
+
+                    <div class="rescnt">
+                        <input type="text" name="stradrss2">
+                        <p class="text-center">Street Address line 2</p>
+                    </div>
+
+                    <div class="rescnt">
+                        <input type="text" name="city">
+                        <p class="text-center">City</p>
+                    </div>
+                </div>
+
+                <div class="regesb">
+                    <div class="rescnt">
+                        <input type="text" name="state">
+                        <p class="text-center">State / Province</p>
+                    </div>
+
+                    <div class="rescnt">
+                        <input type="number" name="pstcode">
+                        <p class="text-center">Postal / Zip Code</p>
+                    </div>
+
+                    <div class="rescnt">
+                        <select name="Country" id="Country">
+                            <option></option>
+                            <option value="INDIA">INDIA</option>
+                            <option value="US">US</option>
+                            <option value="GERMANY">GERMANY</option>
+                            <option value="CANADA">CANADA</option>
+                        </select>
+                        <p class="text-center mb-5">Country</p>
+                    </div>
+                </div>
+                <br>
+                <div class="citi">
+                    <h4 class="reg-head-ab mt-5 ">Citizenship</h4>
+                    <div class="regcitrdo">
+                        <div class="ind">
+                            <input type="radio" name="action" id="Indian">
+                            <label for="">Indian Citizen</label>
+                        </div>
+
+                        <div class="ind">
+                            <input type="radio" name="action" id="USCiti">
+                            <label for="">US Citizen</label>
+                        </div>
+
+                        <div class="ind">
+                            <input type="radio" name="action" id="EUCiti">
+                            <label for="">EU Citizen</label>
+                        </div>
+
+                        <div class="ind">
+                            <input type="radio" name="action" id="otherss">
+                            <input type="text" placeholder="Other" name="action" id="othersss">
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="marioccemp mt-4 mb-2">
+                    <div class="mari">
+                        <h4 class="reg-head-ab mt-4">Marital Status</h4>
+                        <select class="Maritals" name="Maritals" id="Maritals">
+                            <option></option>
+                            <option value="Single">Single</option>
+                            <option value="Married">Married</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="occu">
+                        <h4 class="reg-head-ab mt-4">Occupation</h4>
+                        <input class="occup" type="text" name="occupation" id="occupation">
+                    </div>
+                    <br>
+                    <div class="empname">
+                        <h4 class="reg-head-ab mt-4">Employer Name</h4>
+                        <input class="occup" type="text" name="ename" id="ename">
+                    </div>
+                </div>
+
+            </div>
+            <br>
+
+            <div class="chkbox text-center mt-5">
+                <p>By signing this form, I acknowledge that the information I've given in this form is accurate and I
+                    agree all the terms and conditions.</p>
+                <input id="checkbox" type="checkbox" />
+                <label class="agreement" for="checkbox"> I agree to these <a class="trmscndn" href="#">Terms and
+                        Conditions</a>.</label>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="lsbmt text-center mb-5">
+                <input type="submit" class="btn btn-primary text-center" value="Create Username And Password"
+                    onclick="window.location.href='bankreg2.html'">
+
+            </div>
+        </form>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="foothead">
+            <div class="jpd">
+                <h3>ES10 BANK</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, accusantium ipsum natus fuga amet iure
+                    beatae reprehenderit architecto assumenda quidem ab nesciunt optio quo quas et cumque. Maiores,
+                    sequi
+                    magni.</p>
+                <ul class="socialm">
+                    <li><a href="https://www.facebook.com/" class="fa fa-facebook"></a></li>
+                    <li><a href="https://twitter.com/i/flow/login" class="fa fa-twitter"></a></li>
+                    <li><a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram"></a></li>
+                    <li><a href="https://www.youtube.com/" class="fa fa-youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+     <!-- JavaScript Bundle with Popper -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+ <!-- JavaScript Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+     crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ <link rel="stylesheet" href="style.css">
+ <script src="bank.js"></script>
+</head>
+
+<body class="loga">
+   
+
+    <!-- NAvigation Bar -->
+    <nav class="navbar navbar-expand-lg py-3 sticky-top navbar-light bg-white">
+        <div class="container-fluid">
+            <img class="logo me-3" src="bank.jpg" alt="" width="100px" height="50px">
+            <a class="navbar-brand" href="#">ES10 BANK</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+   
+   <!-- Body -->
+   <section id="lsection-b">
+    <div class="container">
+        <div class="rfc flex-container mb-5">
+            <div class="flex-child col-sm-8  text-center">
+                <h1 class="text-primary">WELCOME</h1>
+                <br>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aut est amet culpa
+                    assumenda quaerat repudiandae voluptate! Quam dolor amet, quisquam atque earum consequuntur nam
+                    harum nulla, nihil delectus distinctio.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem deserunt voluptas accusamus totam et eveniet. Esse pariatur, rem consequatur officia tenetur quis earum, veritatis possimus nostrum, voluptas voluptates magnam corporis?</p>
+               
+            </div>
+            <div class=" lfc flex-child col-sm-4">
+                <form action="">
+                    <div class="log">
+                        <h1 class="text-primary">LogIn</h1>
+
+                        <div class="acno mt-5 mb-2">
+                            <label for="Acnumbr" >Account Number : </label>
+                            <input class="txb" type="text" id="Acnumbr">
+                        </div>
+                        <br>
+                        <div class="pswrd">
+                            <label for="Password">Password :</label>
+                            <input class="txb" type="password" id="pwd">
+                        </div>
+                    </div>
+
+                    <div class="notregi">
+                        <div class="forget-p mt-5">
+                            <a class="text-primary" href="#"><strong>Forget Password</strong></a>
+                        </div>
+                        <div class="newuser">
+                            <a class="text-primary" href="bankreg.html"><strong>Register Now</strong></a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <button type="button" class="btn btn-primary" value="LogIn" onclick="Bank.login()">LogIn </button>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+   
+   
+   
+   
+    
+</body>
+
+</html>

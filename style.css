@@ -1,0 +1,509 @@
+/* index Page */
+
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+:root {
+
+    --primary: rgb(24, 66, 255);
+    --dark: rgba(37, 37, 37);
+    --body: rgba(210, 230, 206, 0.908);
+    --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+
+}
+
+body{
+    font-family: Sora, "sans-serif";
+    line-height: 1.7;
+    color: var(--body);
+}
+
+h1,h2,h3,h4,h5,h6,
+.display-5{
+    color: var(--dark);
+    font-weight: 700;
+}
+
+a{
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.navbar{
+    box-shadow: var(--box-shadow);
+}
+
+.navbar.logo{
+   
+    position: fixed;
+}
+
+.navbar.nav-link{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.btn{
+    padding: 18px 22px;
+    border-width: 2px;
+    border-radius: 0px;
+}
+
+.first{
+    background-image: url(a.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+
+.first::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(21, 20, 51, 0.8);
+    z-index: -1;
+}
+
+section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+p{
+    color: #000;
+}
+
+.card-effect{
+    box-shadow: var(--box-shadow);
+    background-color: white;
+    padding: 25px;
+    transition: 0.35s ease;
+}
+
+.card-effect:hover{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.iconbox{
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: white;
+    font-size: 32px;
+    border-radius: 100px;
+}
+
+.servicel{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+
+.servicel::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: var(--primary);
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+
+.servicel:hover .iconbox{
+    background-color: white;
+    color: var(--primary);
+}
+
+.servicel:hover h5,
+.servicel:hover p{
+    color: white;
+}
+
+.servicel:hover::after{
+    opacity: 1;
+    top: 0;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.flex-child{
+    flex: 1;
+}
+
+.flex-child:first-child{
+    margin-right: 60px;
+}
+
+.imgb{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+ul{
+    text-align: left;
+    color: #000;
+}
+
+.flex-container2{
+    display: flex;
+}
+
+.ab{
+    width: 335px;
+}
+
+.bc{
+    color: rgba(0, 0, 0, 0.511);
+}
+.bc:hover{
+    color: white;
+}
+
+.cd{
+    text-align: left;
+    font-size: 32px;
+}
+
+.second{
+    opacity: 0.9;
+    background-image: url(e.jpg);
+    background-position: center;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    position: relative;
+}
+
+.row2{
+    display:inline-flex;
+   
+}
+
+.csa{
+    max-width: 800px;
+}
+
+.bp{
+    width: 100px;
+    height: 35px;
+}
+
+footer{
+    background: #F0E0C9;
+    height: auto;
+    width: auto;
+    padding-top: 40px;
+    color: white;
+}
+
+.jpd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.jpd h3{
+    font-size: larger;
+    color:#7A4B1D;
+    line-height: 20px;
+}
+
+.jpd p{
+    font-size: medium;
+    color: #7A4B1D;
+    text-align:center;
+    max-width: 800px;
+}
+
+.socialm{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+
+}
+.socialm li{
+    margin: 0 10px;
+    display: inline-block;
+    padding: 10px;
+    font-size: 35px;
+    
+}
+
+.socialm a{
+    text-decoration: none;
+    color: #7A4B1D;
+}
+
+.socialm a:hover {
+    color: var(--primary);
+}
+
+.socialm a i{
+    font-size: medium;
+    transition: color .4s ease;
+}
+
+/* Login Page */
+
+.loga{
+    opacity: 0.9;
+    background-image: url(f.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.lfc{
+    border-left: 6px solid rgb(24, 66, 255);
+    height: 400px;
+    position: absolute;
+    left: 65%;
+    text-align: center;
+}
+
+.rfc{
+    max-width: 700px;
+}
+
+.acno{
+    color: #000;
+}
+
+.pswrd{
+    color: #000;
+    position: relative;
+    left: 5%;
+}
+
+.txb{
+    align-items: right;
+}
+
+
+
+
+/* Bank Registration */
+
+.bankrega{
+    overflow-x: hidden;
+    background-image: url(i.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.regfh{
+    text-transform:capitalize;
+}
+
+.AcntInfo{
+    color: black;
+    position: relative;
+    left: 2cm;
+}
+
+.regfd{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    left: 3cm;
+    gap: 1cm;
+}
+
+.prsnlInfo{
+    color: black;
+    position: relative;
+    left: 2cm;
+}
+
+
+.reganame{
+    position: relative;
+    left: 3cm;
+    display: flex;
+    flex-direction: row;
+    gap: 2cm;
+}
+
+.rega-phn{
+    position: relative;
+    left: 3cm;
+    display: flex;
+    flex-direction: row;
+    gap: 2cm;
+}
+
+.reg-head-a{
+    position: relative;
+    left: 3cm;
+}
+
+.reg-head-ab{
+    position: relative;
+    left: 5cm;
+}
+
+.phndob{
+    position: relative;
+    display: flex;
+    gap: 2cm;
+}
+
+.reg-row_cont input[type=number]{
+    width: 3cm;
+}
+
+.rega-dob{
+    position: relative;
+    left: 3cm;
+}
+
+.regresa{
+    top: .5cm;
+    position: relative;
+    left: 5cm;
+    display: flex;
+    flex-direction: row;
+    gap: 2cm;
+}
+
+.regesb{
+    top: 2cm;
+    position: relative;
+    left: 5cm;
+    display: flex;
+    flex-direction: row;
+    gap: 2cm;
+}
+
+.regcitrdo{
+    top: 0.5cm;
+    position: relative;
+    left: 5cm;
+    display: flex;
+    gap: 3cm;
+    font-family: sans-serif;
+    color: #000;
+}
+
+.Maritals{
+    position: relative;
+    left: 5cm;
+}
+
+.occup{
+    position: relative;
+    left: 5cm;
+}
+
+.marioccemp{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 3cm;
+}
+
+.lsbmt{
+    position: relative;
+    
+}
+
+.agreement{
+    color: #000;
+}
+
+.trmscndn{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.trmscndn:hover{
+    color: var(--primary);
+}
+
+/* BAlance */
+
+.AccountBal{
+    position: relative;
+    flex-direction: row;
+    left: 3cm;
+    gap: 1cm;
+}
+
+.BalInfo{
+    position: relative;
+    left: 2cm;
+}
+
+/* Transaction */
+
+.transa{
+    background-image: url(j.jpg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.rod{
+    position: absolute;
+    top: 14%;
+    left: 45%;
+}
+.rd{
+    position:absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 500px;
+    background:rgba(12, 0, 0, 0.541);
+    border-radius: 20px;
+    color: beige;
+ }
+
+ .rdbtn{
+    position: relative;
+    left: 25%;
+ }
+
+ .acnbb{
+    position: relative;
+    left: 10%;
+    color: #F0E0C9;
+    
+ }
+
+ .acnbc{
+    position: relative;
+    left: 32.75%;
+    color: #F0E0C9;
+ }
+
+ .acnbd{
+    position: relative;
+    left: 24.5%;
+    color: #F0E0C9;
+ }
+
+ 

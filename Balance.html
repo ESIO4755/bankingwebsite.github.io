@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+        </script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="bank.js"></script>
+
+</head>
+
+<body class="bankrega">
+
+
+    <!--Navigation  -->
+
+    <nav class="navbar navbar-expand-lg py-3 sticky-top navbar-light bg-white">
+        <div class="container-fluid">
+            <img class="logo me-3" src="bank.jpg" alt="" width="100px" height="50px">
+            <a class="navbar-brand" href="#">ES10 BANK</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="landing.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="landing.html#section-a">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="landing.html#section-b">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="landing.html#section-c">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="banklogin.html">LogIn</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="reg mt-4">
+        <h1 class=" regfh text-primary text-center"><strong>Balance Information</strong></h1>
+        <br>
+        <form action="">
+
+            <!-- Account info -->
+            <div class="BalInfo">
+                    <label for="">Account Number</label>
+                    <h3 id="uname"></h3>
+                    <h4 id="ubalance"></h4>
+                    <input type="text" name="ano" id="ano" placeholder="Account Number Here...."oninput="Bank.balance()">
+            </div>
+
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+        </form>
+
+    <!-- Footer -->
+    <footer>
+        <div class="foothead">
+            <div class="jpd">
+                <h3>ES10 BANK</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, accusantium ipsum natus fuga amet iure
+                    beatae reprehenderit architecto assumenda quidem ab nesciunt optio quo quas et cumque. Maiores,
+                    sequi
+                    magni.</p>
+                <ul class="socialm">
+                    <li><a href="https://www.facebook.com/" class="fa fa-facebook"></a></li>
+                    <li><a href="https://twitter.com/i/flow/login" class="fa fa-twitter"></a></li>
+                    <li><a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram"></a></li>
+                    <li><a href="https://www.youtube.com/" class="fa fa-youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
